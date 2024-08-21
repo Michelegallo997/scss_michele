@@ -38,6 +38,8 @@
         width: 74%;
         bottom: 70px;
         left: 80px;
+        animation: float 5.7s ease-in-out infinite;
+        pointer-events: none;
     }
 
     .item3 {
@@ -47,6 +49,8 @@
         width: 90%;
         bottom: 7.25rem;
         left: 6.25rem;  
+        animation: float 6s ease-in-out infinite;
+        pointer-events: none;
     }
 
     h2 {
@@ -61,16 +65,27 @@
     }
 
     .item5 {
+        pointer-events: none;
         grid-column: 1 / 3;
         grid-row: 2 / 5;
         z-index: 4;
         top: 6.25rem;
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+            transform: translateY(-10px);
+        }
     }
 
     .item6 {
+        pointer-events: none;
         grid-column: 2 / 5;
         grid-row: 2 / 5;
         z-index: 3;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-40px);
+        }
     }
 
     .item7 {
@@ -81,6 +96,14 @@
         z-index: 2;
         width: 95%;
         
+    }
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
     }
 }
 
@@ -112,7 +135,7 @@
 .section_n3 {
     position: relative;
     display: grid;
-    background-color: rgb(23, 67, 100);
+    background-image: url("/css/imagenes/3dart.jpg");
     height: 95rem;
     width: 100vw; // Ocupa todo el ancho de la ventana
     grid-template-columns: repeat(3, 1fr);
@@ -124,6 +147,8 @@
     overflow: hidden;
     padding: 0; // Eliminando padding para evitar desbalance
     box-sizing: border-box; // Asegura que el padding no afecte el tamaño total
+    background-size: cover;
+    background-position: center;
 
     p {
         font-family: "Playwrite BE VLG", cursive;
