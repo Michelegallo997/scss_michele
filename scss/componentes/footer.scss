@@ -1,0 +1,95 @@
+footer {
+    width: 100%;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    padding: 1.25rem 0;
+    color:$blanco;
+    margin-top: auto;
+    bottom: 0;
+    line-height: 1.25rem;
+    
+    .foot {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 30;
+
+        .colo {
+            flex-basis: 25%;
+            padding: 0.625rem;
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                flex-basis: 15%;
+            }
+        }
+
+        .footer-button {
+            display: flex;
+            align-items: center;
+            padding: 0.625rem 1.25rem;
+            background: linear-gradient(to right, $button, $primary_color);
+            color: $blanco;
+            text-decoration: none;
+            margin-top: 0.625rem;
+            margin-bottom: 0.625rem;
+            width: 11.5rem;
+            border-radius: 2rem;
+
+            .icon {
+                margin-left: 3rem;
+                img{
+                    width: 2.0625rem;
+                    height: auto;
+                }
+                
+
+            }
+        }
+
+        .footer-list {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                font-size: 1.2em;
+            }
+        }
+
+        .social-icons {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                img {
+                    width: 2.0625rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    hr {
+        width: 90%;
+        border: 0;
+        border-bottom: 0.0625rem solid #ccc;
+        margin: 1.25rem auto;
+    }
+
+    .underline {
+        width: 100%;
+        height: 0.3125rem;
+        background-color: #767676;
+        border-radius: 0.1875rem;
+    }
+
+    .copyright {
+        text-align: center;
+        color: #ccc;
+    }
+}

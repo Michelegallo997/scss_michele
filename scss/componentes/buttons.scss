@@ -1,0 +1,75 @@
+.styled-button {
+    padding: 0.625rem 3.125rem;
+    border: none;
+    outline: none;
+    color: $blanco;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 38px;
+    background-color: transparent; // Agregado
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3em;
+    width: 18.125rem; // Ancho fijo
+    height: 3.75rem; // Altura fija
+    top: -1.875rem;
+
+    &::after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        left: 0;
+        top: 0;
+        border-radius: 2.125rem;
+    }
+
+    &::before {
+        content: "";
+        background: linear-gradient(
+            45deg,
+            #ff0000, #ff7300, #fffb00, #48ff00,
+            #00ffd5, #002bff, #ff00c8, #ff0000
+        );
+        position: absolute;
+        top: -0.125rem;
+        left: -0.125rem;
+        background-size: 600%;
+        z-index: -1;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        filter: blur(0.5rem);
+        animation: glowing 20s linear infinite;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 2.125rem;
+        opacity: 0;
+        font-family: "Playwrite BE VLG", cursive, ro;
+    }
+
+    &:hover::before {
+        opacity: 1;
+    }
+
+    &:active::after {
+        background: transparent;
+    }
+
+    &:active {
+        color: $negro;
+        font-weight: bold;
+    }
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}

@@ -1,0 +1,189 @@
+// Header Styles
+header {
+    .button-main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.625rem 1.25rem;
+      background: linear-gradient(to top, #3e086e, #a64aed); // Colores de fondo
+      color: #fff; // Color del texto
+      text-decoration: none;
+      border-radius: 1.25rem; // Bordes redondeados
+    }
+  }
+  
+  // Footer Styles
+  footer {
+    width: 100%;
+    background: linear-gradient(to right, #00093c, #2d0b00); // Gradiente de fondo del footer
+    padding: 1.25rem 0;
+    color: #fff; // Color del texto
+    margin-top: auto;
+    line-height: 1.25rem;
+    position: relative;
+    z-index: 30;
+  
+    .footer-button {
+      display: flex;
+      align-items: center;
+      padding: 0.625rem 1.25rem;
+      background: linear-gradient(to right, #387da7, #854bd7); // Gradiente del botón
+      color: #fff; // Color del texto del botón
+      text-decoration: none;
+      margin-top: 0.625rem;
+      width: 10.5rem;
+      border-radius: 2rem;
+  
+      .icon {
+        margin-left: 3rem;
+      }
+    }
+  
+    .foot1 {
+      width: 85%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+  
+      .colo {
+        flex-basis: 25%;
+        padding: 0.625rem;
+  
+        &:nth-child(2),
+        &:nth-child(3) {
+          flex-basis: 15%;
+        }
+      }
+  
+      .social-icons {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+
+a img {
+        width: 2.0625rem;
+        height: auto;
+        }
+    }
+    }
+
+    hr {
+    width: 90%;
+    border: 0;
+      border-bottom: 0.0625rem solid #ccc; // Borde gris claro
+    margin: 1.25rem auto;
+    }
+
+    .underline {
+    width: 100%;
+    height: 0.3125rem;
+    background-color: #767676;
+    border-radius: 0.1875rem;
+    }
+
+    .copyright {
+    text-align: center;
+      color: #ccc; // Color gris claro para el texto de copyright
+    }
+}
+
+
+  // Botón personalizado
+.btn-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333; // Fondo oscuro para el botón
+    color: #fff; // Texto blanco
+    border-radius: 2rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 18rem; // Anchura fija para todos los botones
+    height: 3.5rem; // Altura fija para todos los botones
+  
+    &:hover {
+      background-color: #444; 
+      transform: scale(1.05);
+    }
+  
+    .app-icon {
+      width: 1.5rem; // Tamaño del icono
+      height: auto;
+      margin-right: 0.75rem; 
+    }
+  
+    .btn-text {
+      display: inline-block;
+      font-size: 1rem;
+      strong {
+        font-weight: bold;
+        color: #a8a8a8; 
+      }
+    }
+  }
+  
+
+
+  // Image Styles
+  .robot-image {
+    max-width: 100%;
+    max-height: 112.5rem;
+    position: relative;
+    z-index: 25;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -11.875rem;
+    pointer-events: none; 
+  }
+  
+  .row-image {
+    max-width: 100%;
+    max-height: 112.5rem;
+    position: absolute;
+    z-index: 24; 
+    left: 50%;
+    transform: translateX(-50%);
+    top: 160px;
+    pointer-events: none;
+  }
+  
+  // Button Container
+  .button-container {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    z-index: 30;
+  }
+  
+  // Background Overlay
+  .background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+  }
+  
+  // App Icon Styles
+  .app {
+    max-width: 3.4375rem;
+  }
+  
+  .app1 {
+    max-width: 2.6875rem;
+    max-height: 2.6875rem;
+    margin: 0.625rem;
+  }
+  

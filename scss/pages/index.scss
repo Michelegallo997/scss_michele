@@ -1,0 +1,195 @@
+.contai {
+    background-image: url("imagenes/listpng.png");
+    max-width: 120rem;
+    overflow: hidden;
+}
+.grid {
+    display: grid;
+    max-width: 120rem;
+    height: 75rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 180px);
+    gap: 0.625rem;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+    overflow: hidden;
+
+    img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        pointer-events: none;
+    }
+
+    h1 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        z-index: 8;
+    }
+
+    .item2 {
+        grid-column: 2 / 5;
+        grid-row: 1 / 3;
+        z-index: 7;
+        width: 74%;
+        bottom: 70px;
+        left: 80px;
+    }
+
+    .item3 {
+        grid-column: 1 / 5;
+        grid-row: 1 / 5;
+        z-index: 6;
+        width: 90%;
+        bottom: 7.25rem;
+        left: 6.25rem;  
+    }
+
+    h2 {
+        grid-column: 1 / 3;
+        grid-row: 2 / 5;
+        text-align: center;
+        justify-self: end;
+        align-self: end;
+        z-index: 5;
+        margin: 0 6.25rem 5.625rem 6.25rem;
+        font-size: 1.8em;
+    }
+
+    .item5 {
+        grid-column: 1 / 3;
+        grid-row: 2 / 5;
+        z-index: 4;
+        top: 6.25rem;
+    }
+
+    .item6 {
+        grid-column: 2 / 5;
+        grid-row: 2 / 5;
+        z-index: 3;
+    }
+
+    .item7 {
+        grid-column: 1 / 5;
+        grid-row: 1 / 5;
+        top: -18.125rem;
+        left: 21.875rem;
+        z-index: 2;
+        width: 95%;
+        
+    }
+}
+
+.section_n2 {
+    position: relative;
+    z-index: 11;
+    background: linear-gradient(to top, #051571, $negro);
+    height: 37.25rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    margin-top: -15rem;
+    box-shadow: 0rem .625rem 1.25rem 0rem rgba(0, 0, 0, 0.9);
+    padding: 0; // Eliminando padding para evitar desbalance
+    box-sizing: border-box; // Asegura que el padding no afecte el tamaño total
+
+    img {
+        height: 28rem;
+        width: auto;
+        margin: .625rem 2.5rem .625rem 1.25rem;
+    }
+
+    p {
+        font-size: 1.875em;
+    }
+}
+
+/* SECTION N3 DE PAGINA PRINCIPAL (INDEX) */
+.section_n3 {
+    position: relative;
+    display: grid;
+    background-color: rgb(23, 67, 100);
+    height: 95rem;
+    width: 100vw; // Ocupa todo el ancho de la ventana
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    z-index: 10;
+    margin-top: 0rem;
+    bottom: 6rem;
+    gap: 0.625rem;
+    overflow: hidden;
+    padding: 0; // Eliminando padding para evitar desbalance
+    box-sizing: border-box; // Asegura que el padding no afecte el tamaño total
+
+    p {
+        font-family: "Playwrite BE VLG", cursive;
+        font-size: 1em;
+    }
+
+    button {
+        font-family: "Playwrite BE VLG", cursive;
+    }
+
+    img {
+        position: relative;
+        height: auto;
+        pointer-events: none;
+        object-fit: cover;
+        width: 100%; // Asegurando que la imagen tome todo el ancho del contenedor
+
+        // Ajustes adicionales para manejar imágenes más grandes que el grid
+        width: auto;
+        height: 200%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .s3_1 {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        overflow: hidden; // Para ocultar el contenido que se desborda
+    }
+
+    .s3_2 {
+        position: relative;
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        align-self: center;
+        justify-self: center;
+        object-fit: cover;
+        overflow: hidden; // Para ocultar el contenido que se desborda
+
+    }
+
+    .s3_3 {
+        grid-column: 2 / 5;
+        grid-row: 3 / 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .s3_4 {
+        position: relative;
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        align-self: center;
+        justify-self: center;
+        object-fit: cover;
+        top: 220px;
+        left: -120px;
+        text-transform: uppercase;
+
+        .styled-button {
+            width: 390px;
+            text-align: center;
+            align-content: center;
+        }
+    }
+}
+
+

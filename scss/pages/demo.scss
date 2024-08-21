@@ -1,0 +1,33 @@
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+.form {
+    background-color: rgba(255, 255, 255, 0.4); // Fondo blanco con 80% de opacidad
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 16px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+}
+}

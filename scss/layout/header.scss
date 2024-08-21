@@ -1,0 +1,42 @@
+
+header{
+.navbar-custom {
+    background: none;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+
+    .navbar-brand,
+    .nav-link {
+        color: $blanco;
+    }
+    .navbar-toggler {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.navbar-brand img,
+.logo_nav img {
+    height: 4.75rem;
+    width: auto;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: var(--color-primario); // Añadir hover effect
+    }
+}
+.button-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.625rem 1.25rem;
+        background: linear-gradient(to top, $secondary_color, $primary_color);
+        color: $blanco;
+        text-decoration: none;
+        border-radius: 1.25rem;
+    }
+}

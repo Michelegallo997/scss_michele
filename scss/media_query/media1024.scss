@@ -1,0 +1,50 @@
+
+    @media screen and (max-width: 1024px) {
+    body{
+    max-width: 64rem;
+    .menu {
+        padding: .325rem 1.0rem;
+        }
+
+    .grid{
+        .item7 {
+            top: -5rem;
+            left: 10rem;
+        } 
+        .item2 {
+            top: -15px;
+        }
+        .item3 {
+            top: -0.9375rem;
+            width: 100%;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin: 0px 15px 70px 15px;
+        }
+
+        
+        }
+        .section_n3{
+            .s3_3 {
+            button{left: 4.375rem;
+                top: -7.8125rem;
+            }
+            }  
+            .s3_2 {        
+                height: 170%;
+                right: 2.125rem;
+            }
+            .s3_4 {
+                .styled-button{
+                left: -3.4375rem;
+                top: -3.125rem;
+                }
+            }
+    }
+    }    
+    }
+
+
+
+
