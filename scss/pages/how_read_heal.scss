@@ -18,7 +18,8 @@ body {
     img {
         max-width: 25%;
         height: auto;
-        border-radius: 8px;
+        border-radius: 80px;
+        box-shadow: 0rem .625rem 1.25rem 0rem rgba(0, 0, 0, 0.9);
     }
 
     p {
@@ -45,7 +46,7 @@ body {
         text-align: center;
 
         img {
-            max-width: 80%;
+            max-width: 60%;
             margin-bottom: 20px;
         }
 
@@ -54,6 +55,7 @@ body {
         }
     }
 
+    
     @media (max-width: 480px) {
         p {
             font-size: 1rem;

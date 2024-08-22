@@ -843,7 +843,8 @@ body {
   .section-1 img, .section-2 img, .section-3 img, .section-4 img {
     max-width: 25%;
     height: auto;
-    border-radius: 8px; }
+    border-radius: 80px;
+    box-shadow: 0rem 0.625rem 1.25rem 0rem rgba(0, 0, 0, 0.9); }
   .section-1 p, .section-2 p, .section-3 p, .section-4 p {
     font-size: 1.5rem;
     line-height: 1.5;
@@ -862,7 +863,7 @@ body {
       flex-direction: column;
       text-align: center; }
       .section-1 img, .section-2 img, .section-3 img, .section-4 img {
-        max-width: 80%;
+        max-width: 60%;
         margin-bottom: 20px; }
       .section-1 p, .section-2 p, .section-3 p, .section-4 p {
         margin: 0; } }
