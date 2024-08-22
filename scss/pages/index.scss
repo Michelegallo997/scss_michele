@@ -135,7 +135,7 @@
 .section_n3 {
     position: relative;
     display: grid;
-    background-image: url("/css/imagenes/3dart.jpg");
+    background: linear-gradient(to left, #1a276e, #1e5889);
     height: 95rem;
     width: 100vw; // Ocupa todo el ancho de la ventana
     grid-template-columns: repeat(3, 1fr);

@@ -1,20 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
 .How_Read_Heal_1 {
-    background-color: #567185;
-    max-width: 100%;
-    height: 25.25rem;
-    padding: 6.25rem 0;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    font-size: 2rem;
+    justify-content: space-between;
+    padding: 20px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1000" width="1920" height="1000"><rect x="0" y="0" width="1920" height="1000" fill="%230066FF"></rect><path d="M0 129L35.5 132.5C71 136 142 143 213.2 132.5C284.3 122 355.7 94 426.8 92.8C498 91.7 569 117.3 640 121.5C711 125.7 782 108.3 853.2 91.2C924.3 74 995.7 57 1066.8 57C1138 57 1209 74 1280 83.8C1351 93.7 1422 96.3 1493.2 103.7C1564.3 111 1635.7 123 1706.8 124.7C1778 126.3 1849 117.7 1884.5 113.3L1920 109L1920 0L1884.5 0C1849 0 1778 0 1706.8 0C1635.7 0 1564.3 0 1493.2 0C1422 0 1351 0 1280 0C1209 0 1138 0 1066.8 0C995.7 0 924.3 0 853.2 0C782 0 711 0 640 0C569 0 498 0 426.8 0C355.7 0 284.3 0 213.2 0C142 0 71 0 35.5 0L0 0Z" fill="%2322cba6" stroke-linecap="round" stroke-linejoin="miter"/></svg>') no-repeat center center;
+    background-size: cover;  // Asegura que el fondo cubra toda la sección
+    color: white;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    animation: waveEffect 10s infinite linear; // Aplicar animación de ola
 
     img {
-    height: 28.75rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
+        max-width: 30%;
+        height: auto;
+        border-radius: 8px;
     }
 
     p {
-    margin-right: 2rem;
-    margin-left: 2rem;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        flex: 1;
+        margin: 0 20px;
+    }
+
+    // Animación de ola
+    @keyframes waveEffect {
+        0% {
+            background-position: 40% 10%;
+        }
+        50% {
+            background-position: 100% 60%;
+        }
+        100% {
+            background-position: 40% 10%;
+        }
+    }
+
+    // Responsivo
+    @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+
+        img {
+            max-width: 80%;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        p {
+            font-size: 1rem;
+        }
     }
 }
