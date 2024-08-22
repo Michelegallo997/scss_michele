@@ -26,7 +26,7 @@ header{
     transition: color 0.3s ease;
 
     &:hover {
-        color: var(--color-primario); // Añadir hover effect
+        color: $font-color; // Añadir hover effect
     }
 }
 .button-main {
