@@ -5,6 +5,8 @@ header{
     top: 0;
     width: 100%;
     z-index: 20;
+    display: flex;
+    align-self: end;
 
     .navbar-brand,
     .nav-link {
@@ -31,8 +33,7 @@ header{
 }
 .button-main {
         display: flex;
-        justify-content: center;
-        align-items: center;
+    
         padding: 0.625rem 1.25rem;
         background: linear-gradient(to top, $secondary_color, $primary_color);
         color: $blanco;

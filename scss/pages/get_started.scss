@@ -1,4 +1,4 @@
-// Header Styles
+
 header {
     .button-main {
       display: flex;
@@ -100,11 +100,12 @@ a img {
     color: #fff; // Texto blanco
     border-radius: 2rem;
     padding: 0.75rem 1.5rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     border: none;
     transition: background-color 0.3s, transform 0.3s;
-    width: 18rem; // Anchura fija para todos los botones
-    height: 3.5rem; // Altura fija para todos los botones
+    width: 16rem; // Anchura fija para todos los botones
+    height: 6rem; // Altura fija para todos los botones
+
   
     &:hover {
       background-color: #444; 
@@ -112,7 +113,7 @@ a img {
     }
   
     .app-icon {
-      width: 1.5rem; // Tamaño del icono
+      width: 1.9rem; // Tamaño del icono
       height: auto;
       margin-right: 0.75rem; 
     }
@@ -140,18 +141,19 @@ a img {
     top: -11.875rem;
     pointer-events: none; 
   }
-  
-  .row-image {
-    max-width: 100%;
-    max-height: 112.5rem;
+  .floor {
     position: absolute;
-    z-index: 24; 
     left: 50%;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top,$color1, $primary_color);
     transform: translateX(-50%);
-    top: 160px;
-    pointer-events: none;
-  }
+    z-index: 20; 
+    height: 35rem;
+    border-radius: 9rem 9rem 0 0;
+}
   
+
   // Button Container
   .button-container {
     position: absolute;
@@ -166,15 +168,23 @@ a img {
   }
   
   // Background Overlay
-  .background-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 10;
-  }
+// Header Styles
+
+// Video Background
+.video-background {
+  position: fixed; /* Fijado para que cubra toda la pantalla */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que el video cubra toda la pantalla */
+  z-index: 1; /* Asegura que esté detrás del contenido */
+  pointer-events: none; /* Evita que interfiera con la interacción del usuario */
+}
+
+// Background Overlay
+
+
   
   // App Icon Styles
   .app {

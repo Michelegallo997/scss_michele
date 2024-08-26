@@ -1,0 +1,36 @@
+@media screen and (max-width: 1920px) {
+    body {
+        .robot-image {
+            content: url('../css/imagenes/imagen-robot.png');
+          }
+          .btn-custom {
+            .btn-text {
+            font-size: 1.4rem;
+            }
+        }  
+        .grid{
+            .item7 {
+                top: -9.5rem;
+                left: 32rem;
+            }
+            .item5 {
+                top: 9.25rem;
+            }
+            .item6 {
+                top: 2rem;
+            }
+        }
+      
+    .section_n2 {
+        p {font-size: 1.8em;
+    margin: 0rem 1.25rem 0rem 1.25rem;}
+        }
+    
+    .section_n3 {
+        .s3_3 {
+            button{ left: 50px;}
+        }
+
+    }
+}
+}

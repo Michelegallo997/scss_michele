@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 p, h1, h2 {
@@ -20,7 +21,9 @@ header .navbar-custom {
   background: none;
   top: 0;
   width: 100%;
-  z-index: 20; }
+  z-index: 20;
+  display: flex;
+  align-self: end; }
   header .navbar-custom .navbar-brand,
   header .navbar-custom .nav-link {
     color: #fff; }
@@ -40,8 +43,6 @@ header .nav-link {
 
 header .button-main {
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0.625rem 1.25rem;
   background: linear-gradient(to top, #62B9C5, #854bd7);
   color: #fff;
@@ -170,10 +171,18 @@ footer {
   100% {
     background-position: 0 0; } }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1920px) {
+  body .robot-image {
+    content: url("../css/imagenes/imagen-robot.png"); }
+  body .btn-custom .btn-text {
+    font-size: 1.4rem; }
   body .grid .item7 {
-    top: -7.5rem;
-    left: 24rem; }
+    top: -9.5rem;
+    left: 32rem; }
+  body .grid .item5 {
+    top: 9.25rem; }
+  body .grid .item6 {
+    top: 2rem; }
   body .section_n2 p {
     font-size: 1.8em;
     margin: 0rem 1.25rem 0rem 1.25rem; }
@@ -183,6 +192,13 @@ footer {
 @media screen and (max-width: 1440px) {
   body {
     max-width: 100rem; }
+    body .btn-custom {
+      width: 15rem;
+      height: 5rem; }
+      body .btn-custom .app-icon {
+        width: 1.7rem; }
+      body .btn-custom .btn-text {
+        font-size: 1rem; }
     body .grid .item7 {
       top: -7.2rem;
       left: 24rem; }
@@ -197,6 +213,15 @@ footer {
     max-width: 64rem; }
     body .menu {
       padding: .325rem 1.0rem; }
+    body .floor {
+      height: 25rem; }
+    body .btn-custom {
+      width: 16rem;
+      height: 5rem; }
+      body .btn-custom .app-icon {
+        width: 1.1rem; }
+      body .btn-custom .btn-text {
+        font-size: 1rem; }
     body .grid .item7 {
       top: -5rem;
       left: 10rem; }
@@ -221,6 +246,24 @@ footer {
 @media screen and (max-width: 768px) {
   body {
     max-width: 48rem; }
+    body .robot-image {
+      content: url("../css/imagenes/robot.png");
+      max-width: 100%;
+      max-height: 100.5rem;
+      top: 0; }
+    body .floor {
+      height: 13rem;
+      border-radius: 5rem 5rem 0 0; }
+    body .button-container {
+      top: 65%;
+      flex-wrap: nowrap; }
+    body .btn-custom {
+      width: 12rem;
+      height: 4rem; }
+      body .btn-custom .app-icon {
+        width: 0.9rem; }
+      body .btn-custom .btn-text {
+        font-size: 0.8rem; }
     body .section_n2 {
       flex-direction: column;
       height: 50rem; }
@@ -280,6 +323,24 @@ footer {
 @media screen and (max-width: 480px) {
   body {
     max-width: 30rem; }
+    body .robot-image {
+      content: url("../css/imagenes/robot.png");
+      max-width: 100%;
+      max-height: 100.5rem;
+      top: 0; }
+    body .floor {
+      height: 8rem;
+      border-radius: 5rem 5rem 0 0; }
+    body .button-container {
+      top: 63%;
+      flex-wrap: nowrap; }
+    body .btn-custom {
+      width: 9rem;
+      height: 3rem; }
+      body .btn-custom .app-icon {
+        width: 0.9rem; }
+      body .btn-custom .btn-text {
+        font-size: 0.7rem; }
     body .section_n2 {
       flex-direction: column;
       height: 40rem; }
@@ -420,6 +481,24 @@ footer {
 @media screen and (max-width: 320px) {
   body {
     max-width: 30rem; }
+    body .robot-image {
+      content: url("../css/imagenes/robot.png");
+      max-width: 100%;
+      max-height: 100.5rem;
+      top: 0; }
+    body .floor {
+      height: 8rem;
+      border-radius: 5rem 5rem 0 0; }
+    body .button-container {
+      top: 60%;
+      flex-wrap: nowrap; }
+    body .btn-custom {
+      width: 8rem;
+      height: 2.6rem; }
+      body .btn-custom .app-icon {
+        width: 0.8rem; }
+      body .btn-custom .btn-text {
+        font-size: 0.6rem; }
     body .container, body .row, body .col-12, body .card {
       max-width: 100%; }
     body .section_n2 {
@@ -488,11 +567,6 @@ footer {
     body .nav-link {
       font-size: 0.9rem; } }
 
-.contai {
-  background-image: url("imagenes/listpng.png");
-  max-width: 120rem;
-  overflow: hidden; }
-
 .grid {
   display: grid;
   max-width: 120rem;
@@ -515,7 +589,8 @@ footer {
     align-self: center;
     justify-self: center;
     text-align: center;
-    z-index: 8; }
+    z-index: 8;
+    font-size: 4em; }
   .grid .item2 {
     grid-column: 2 / 5;
     grid-row: 1 / 3;
@@ -542,7 +617,7 @@ footer {
     align-self: end;
     z-index: 5;
     margin: 0 6.25rem 5.625rem 6.25rem;
-    font-size: 1.8em; }
+    font-size: 2em; }
   .grid .item5 {
     pointer-events: none;
     grid-column: 1 / 3;
@@ -758,16 +833,16 @@ footer {
   color: #fff;
   border-radius: 2rem;
   padding: 0.75rem 1.5rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   border: none;
   transition: background-color 0.3s, transform 0.3s;
-  width: 18rem;
-  height: 3.5rem; }
+  width: 16rem;
+  height: 6rem; }
   .btn-custom:hover {
     background-color: #444;
     transform: scale(1.05); }
   .btn-custom .app-icon {
-    width: 1.5rem;
+    width: 1.9rem;
     height: auto;
     margin-right: 0.75rem; }
   .btn-custom .btn-text {
@@ -787,15 +862,16 @@ footer {
   top: -11.875rem;
   pointer-events: none; }
 
-.row-image {
-  max-width: 100%;
-  max-height: 112.5rem;
+.floor {
   position: absolute;
-  z-index: 24;
   left: 50%;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, #091b29, #854bd7);
   transform: translateX(-50%);
-  top: 160px;
-  pointer-events: none; }
+  z-index: 20;
+  height: 35rem;
+  border-radius: 9rem 9rem 0 0; }
 
 .button-container {
   position: absolute;
@@ -808,14 +884,19 @@ footer {
   justify-content: center;
   z-index: 30; }
 
-.background-overlay {
+.video-background {
   position: fixed;
+  /* Fijado para que cubra toda la pantalla */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 10; }
+  object-fit: cover;
+  /* Asegura que el video cubra toda la pantalla */
+  z-index: 1;
+  /* Asegura que esté detrás del contenido */
+  pointer-events: none;
+  /* Evita que interfiera con la interacción del usuario */ }
 
 .app {
   max-width: 3.4375rem; }

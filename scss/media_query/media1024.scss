@@ -5,7 +5,23 @@
     .menu {
         padding: .325rem 1.0rem;
         }
+        .floor {
+            height: 25rem;
+        }
 
+        .btn-custom {
+
+            width: 16rem; // Anchura fija para todos los botones
+            height: 5rem; // Altura fija para todos los botones
+        
+            .app-icon {
+            width: 1.1rem; // Tamaño del icono
+            }
+
+            .btn-text {
+            font-size: 1rem;
+            }
+        }  
     .grid{
         .item7 {
             top: -5rem;

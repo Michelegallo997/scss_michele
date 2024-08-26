@@ -1,8 +1,4 @@
-.contai {
-    background-image: url("imagenes/listpng.png");
-    max-width: 120rem;
-    overflow: hidden;
-}
+
 .grid {
     display: grid;
     max-width: 120rem;
@@ -29,6 +25,7 @@
         justify-self: center;
         text-align: center;
         z-index: 8;
+        font-size: 4em;
     }
 
     .item2 {
@@ -61,7 +58,7 @@
         align-self: end;
         z-index: 5;
         margin: 0 6.25rem 5.625rem 6.25rem;
-        font-size: 1.8em;
+        font-size: 2em;
     }
 
     .item5 {

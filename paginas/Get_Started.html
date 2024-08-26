@@ -37,17 +37,32 @@
             </div>
         </nav>
     </header>
-
+  
     <main class="position-relative">
-        <!-- Background Overlay -->
-        <div class="background-overlay"></div>
+          <!-- Video Background -->
+    <video autoplay loop muted playsinline class="video-background">
+        <source src="../css/imagenes/smoke.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Background Overlay -->
+    <div class="background-overlay"></div>
+    
+    <div class="container-fluid flex-grow-1">
+        <!-- Tu contenido actual -->
+        <section class="image-container position-relative text-center">
+            <!-- ... -->
+        </section>
+    </div>    
         
         <div class="container-fluid flex-grow-1">
             <section class="image-container position-relative text-center">
                 <div class="position-relative">
-                    <img src="../css/imagenes/row.png" alt="Row Image" class="row-image img-fluid">
+                    
                     <img src="../css/imagenes/imagen-robot.png" alt="Robot Image" class="robot-image img-fluid">
+                    <div class="floor"></div>
                 </div>
+                
                 <div class="button-container position-absolute">
                     <button type="button" class="btn btn-dark btn-custom btn-lg">
                         <img class="app-icon" src="../ASSETS/Apple-Logo.png" alt="Apple Logo">
@@ -59,9 +74,10 @@
                     </button>
                 </div>
             </section>
-        </div>      
+        </div>    
+        
     </main>
-
+   
     <footer>
         <section class="foot">
         <div class="colo">
