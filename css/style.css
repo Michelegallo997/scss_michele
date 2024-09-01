@@ -570,7 +570,7 @@ footer {
 
 .grid {
   display: grid;
-  max-width: 120rem;
+  max-width: 125rem;
   height: 75rem;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 180px);
@@ -758,30 +758,27 @@ footer {
   width: 110%;
   max-width: 750px;
   text-align: center; }
-
-.register-form h2 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  color: #fff;
-  /* Cambiamos el color para que se vea bien sobre la imagen */ }
-
-.register-form label {
-  display: block;
-  font-size: 14px;
-  margin-bottom: 5px;
-  color: #fff;
-  /* Cambiamos el color para que se vea bien sobre la imagen */ }
-
-.register-form input {
-  width: 90%;
-  padding: 8px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-  background: rgba(255, 255, 255, 0.8);
-  color: #333;
-  /* Color del texto dentro del input */ }
+  .register-form h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+    /* Cambiamos el color para que se vea bien sobre la imagen */ }
+  .register-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #fff;
+    /* Cambiamos el color para que se vea bien sobre la imagen */ }
+  .register-form input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    /* Color del texto dentro del input */ }
 
 .register-form input::placeholder {
   color: #aaa; }
@@ -792,11 +789,11 @@ footer {
   margin-bottom: 5px;
   color: #fff;
   /* Cambiamos el color para que se vea bien sobre la imagen */ }
+  .subscribe p {
+    margin: 0;
+    margin-bottom: 5px; }
 
-.subscribe p {
-  margin: 0;
-  margin-bottom: 5px; }
-
+.subscribe
 .subscribe label {
   margin-right: 10px; }
 
