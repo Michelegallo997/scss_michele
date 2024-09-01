@@ -49,29 +49,40 @@
         </nav>
     </header>
     <h1></h1>
-    <div class="cont">
-        <form class="form">
-            <h2>Register and get a free demo</h2>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="name">Last Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-            
-
-            <button type="submit">Enviar</button>
-        </form>
+    <div class="form-wrapper">
+        
+        <div class="form-container">
+            <form class="register-form">
+                <h2>REGÍSTRATE Y OBTÉN TU DEMO GRATUITO</h2>
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="last-name">Last Name*</label>
+                <input type="text" id="last-name" name="last-name" required>
+                
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password (Must Be More Than 8 Characters)*</label>
+                <input type="password" id="password" name="password" required>
+                
+                <div class="subscribe">
+                    <p>WOULD YOU LIKE TO STAY UP TO DATE WITH THE LATEST NEWS?</p>
+                    <p>Subscribe to our mailing list and find out first about our special offers.</p>
+                    <label><input type="radio" name="subscribe" value="yes"> Yes</label>
+                    <label><input type="radio" name="subscribe" value="no"> No</label>
+                </div>
+                
+                <button type="submit">SIGN UP</button>
+            </form>
+        </div>
     </div>
+</main>
 </body>
 </html>
 
 
 </section>
-<img src="../css/imagenes/row.png" alt="">
 
 
 

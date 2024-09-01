@@ -735,31 +735,107 @@ footer {
       text-align: center;
       align-content: center; }
 
-.cont {
+header, footer {
+  width: 100%; }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px; }
+
+.form-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%; }
-  .cont .form {
-    background-color: rgba(255, 255, 255, 0.4);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    width: 100%; }
-    .cont .form label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: bold; }
-    .cont .form input[type="text"],
-    .cont .form input[type="email"],
-    .cont .form input[type="password"] {
-      width: 90%;
-      padding: 10px;
-      margin-bottom: 16px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      font-size: 16px; }
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px; }
+
+.register-form {
+  background-image: url("/css/imagenes/carpeta.png");
+  background-size: cover;
+  /* La imagen cubrirá todo el fondo */
+  padding: 20px;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  width: 110%;
+  max-width: 750px;
+  text-align: center; }
+
+.register-form h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #fff;
+  /* Cambiamos el color para que se vea bien sobre la imagen */ }
+
+.register-form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #fff;
+  /* Cambiamos el color para que se vea bien sobre la imagen */ }
+
+.register-form input {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  /* Color del texto dentro del input */ }
+
+.register-form input::placeholder {
+  color: #aaa; }
+
+.subscribe {
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #fff;
+  /* Cambiamos el color para que se vea bien sobre la imagen */ }
+
+.subscribe p {
+  margin: 0;
+  margin-bottom: 5px; }
+
+.subscribe label {
+  margin-right: 10px; }
+
+.register-form button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px; }
+
+.register-form button:hover {
+  background-color: #5548c8; }
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .register-form {
+    max-width: 90%; } }
+
+@media (max-width: 480px) {
+  .register-form {
+    max-width: 95%; }
+  .register-form h2 {
+    font-size: 16px; }
+  .register-form button {
+    font-size: 14px;
+    padding: 8px; } }
 
 header .button-main {
   display: flex;
