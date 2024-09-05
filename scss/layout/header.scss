@@ -1,12 +1,11 @@
 
 header{
+
 .navbar-custom {
     background: none;
     top: 0;
     width: 100%;
     z-index: 20;
-    display: flex;
-    align-self: end;
 
     .navbar-brand,
     .nav-link {
@@ -39,5 +38,8 @@ header{
         color: $blanco;
         text-decoration: none;
         border-radius: 1.25rem;
+    }
+    &:hover {
+        background: linear-gradient(to bottom, $primary_color, $secondary_color); // Efecto hover
     }
 }

@@ -6,7 +6,7 @@ header {
       align-items: center;
       padding: 0.625rem 1.25rem;
       background: linear-gradient(to top, #3e086e, #a64aed); // Colores de fondo
-      color: #fff; // Color del texto
+      color: $blanco; // Color del texto
       text-decoration: none;
       border-radius: 1.25rem; // Bordes redondeados
     }
@@ -17,7 +17,7 @@ header {
     width: 100%;
     background: linear-gradient(to right, #00093c, #2d0b00); // Gradiente de fondo del footer
     padding: 1.25rem 0;
-    color: #fff; // Color del texto
+    color: $blanco; // Color del texto
     margin-top: auto;
     line-height: 1.25rem;
     position: relative;
@@ -28,7 +28,7 @@ header {
       align-items: center;
       padding: 0.625rem 1.25rem;
       background: linear-gradient(to right, #387da7, #854bd7); // Gradiente del botón
-      color: #fff; // Color del texto del botón
+      color: $blanco; // Color del texto del botón
       text-decoration: none;
       margin-top: 0.625rem;
       width: 10.5rem;
@@ -149,10 +149,13 @@ a img {
     background: linear-gradient(to top,$color1, $primary_color);
     transform: translateX(-50%);
     z-index: 20; 
-    height: 35rem;
+    height: 28rem;
     border-radius: 9rem 9rem 0 0;
 }
-  
+a {
+  text-decoration: none;
+  color: $blanco;
+  }
 
   // Button Container
   .button-container {

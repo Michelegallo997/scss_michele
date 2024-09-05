@@ -12,38 +12,38 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .register-form {
     background-image: url('./imagenes/carpeta.png');
     background-size: cover; /* La imagen cubrirá todo el fondo */
 
-    padding: 42px;
-    border-radius: 8px;
-    backdrop-filter: blur(10px);
+    padding: 2.625rem;
+    border-radius: .5rem;
+    backdrop-filter: blur(.625rem);
     width: 110%;
-    max-width: 750px;
+    max-width: 46.875rem;
     text-align: center;
     
     h2 {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 15px;
-    color: #fff; /* Cambiamos el color para que se vea bien sobre la imagen */
+    color: $blanco; /* Cambiamos el color para que se vea bien sobre la imagen */
 }
 label {
     display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: .875rem;
+    margin-bottom: .3125rem;
     color: #fff; /* Cambiamos el color para que se vea bien sobre la imagen */
 }
 input {
     width: 90%;
-    padding: 8px;
-    margin-bottom: 15px;
+    padding: .5rem;
+    margin-bottom: .9375rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
+    border-radius: .25rem;
+    font-size: .875rem;
     background: rgba(255, 255, 255, 0.8);
     color: #333; /* Color del texto dentro del input */
 }
@@ -60,32 +60,32 @@ input {
     text-align: left;
     font-size: 14px;
     margin-bottom: 5px;
-    color: #fff; /* Cambiamos el color para que se vea bien sobre la imagen */
+    color: $blanco; /* Cambiamos el color para que se vea bien sobre la imagen */
     p {
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: .3125rem;
 }
 }
 
 .subscribe 
 
 .subscribe label {
-    margin-right: 10px;
+    margin-right: .625rem;
 }
 
 .register-form button {
     background-color: #6c63ff;
     color: white;
     border: none;
-    padding: 10px;
-    border-radius: 4px;
+    padding: .625rem;
+    border-radius: .25rem;
     cursor: pointer;
     width: 100%;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .register-form button:hover {
-    background-color: #5548c8;
+    background-color: $primary_color;
 }
 
 /* Media Queries para Responsividad */
@@ -101,7 +101,7 @@ input {
     }
 
     .register-form h2 {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .register-form button {
